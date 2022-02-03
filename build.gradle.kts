@@ -18,6 +18,7 @@ dependencies {
     implementation("io.reactivex.rxjava3:rxjava:3.1.3")
     implementation("com.github.akarnokd.rxjava3:rxjava3-common:0.1.0")
     implementation("io.reactivex:rxjava:1.3.8")
+    implementation("com.google.code.findbugs:jsr305:3.0.2")
     testImplementation(kotlin("test"))
 }
 
