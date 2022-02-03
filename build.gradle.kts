@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.7.0-dev-1470"
     application
 }
 
@@ -10,6 +10,7 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
 }
 
 dependencies {
@@ -28,6 +29,7 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.languageVersion = "1.6"
 }
 
 application {
