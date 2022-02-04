@@ -9,9 +9,9 @@ class TypeMismatchWarning {
         }
     }
 
-    fun doTheMapThing2(elements: List<CharSequence>): List<String> {
-        return elements.flatMap {
-            if (it is String) listOf("Yeah") else null // Type mismatch: inferred type is List<String>? but List<String> was expected
-        }
-    }
+//    fun doTheMapThing2(elements: List<CharSequence>): List<String> {
+//        return elements.flatMap {
+//            if (it is String) listOf("Yeah") else null // Type mismatch: inferred type is List<String>? but List<String> was expected
+//        }
+//    }
 }
